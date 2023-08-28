@@ -6,7 +6,7 @@ You can clone the "template" branch as a quickstart for your own project with **
 
 By default the project uses SQLite but you can change it for any other database.
 
-## Back-end
+## Back-end (/api folder)
 
 ### Available commands for Strapi
 
@@ -31,7 +31,7 @@ cd <your project route>\api
 npm run develop
 ```
 
-## Front-end
+## Front-end (/app folder)
 
 ### Next.js:
 
