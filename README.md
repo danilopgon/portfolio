@@ -31,7 +31,7 @@ cd <your project route>\api
 npm run develop
 ```
 
-## Front-end (/app folder)
+## Front-end (/web folder)
 
 ### Next.js:
 
