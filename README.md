@@ -4,7 +4,7 @@ The 2023 version of my portfolio! _(duh)_
 
 You can clone the "template" branch as a quickstart for your own project with **_Strapi + Next.js + TypeScript + TailwindCSS + NextUI + Jest_**
 
-By default the project uses SQLite but you can change it for any other database.
+By default, the project uses SQLite, but you can change it to any other database."
 
 ## Back-end (/api folder)
 
