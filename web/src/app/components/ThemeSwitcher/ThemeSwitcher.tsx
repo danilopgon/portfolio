@@ -25,30 +25,8 @@ const ThemeSwitcher = () => {
       startContent={<SunIcon />}
       endContent={<MoonIcon />}
       onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-    >
-      Dark mode
-    </Switch>
+    ></Switch>
   )
 }
-
-//   return (
-//     <div>
-//       <button
-//         aria-label="Toggle Dark Mode"
-//         type="button"
-//         className="h-10 w-10 rounded bg-default-100 text-primary-300"
-//         onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-//       >
-//         {theme === 'dark' ? (
-//           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-//             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-//           </svg>
-//         ) : (
-//           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-//             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-//           </svg>
-//         )}
-//       </button>
-//     </div>
 
 export default ThemeSwitcher
