@@ -3,10 +3,12 @@ import { Image } from '@nextui-org/image'
 import { Button } from '@nextui-org/button'
 import Link from 'next/link'
 
+import ThemeSwitcher from './components/ThemeSwitcher/ThemeSwitcher'
+
 export default function Home() {
   return (
-    <main className="flex h-screen flex-col items-center justify-center p-24 align-middle">
-      <div className=" container m-3 w-full bg-blue-50 p-2 lg:w-2/3 ">
+    <main className="flex h-screen flex-col items-center justify-center bg-background p-24 align-middle">
+      <div className="w-full lg:w-2/3 ">
         <Card isFooterBlurred radius="lg" className="border-none">
           <Image
             alt="danilopgon"
@@ -20,6 +22,7 @@ export default function Home() {
             </Link>
           </CardFooter>
         </Card>
+        <ThemeSwitcher />
       </div>
     </main>
   )
