@@ -21,7 +21,7 @@ const ThemeSwitcher = () => {
       aria-label="Toggle Dark Mode"
       defaultSelected
       size="lg"
-      color="secondary"
+      color="primary"
       startContent={<SunIcon />}
       endContent={<MoonIcon />}
       onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
