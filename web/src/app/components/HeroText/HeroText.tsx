@@ -2,12 +2,12 @@ import { Balancer } from 'react-wrap-balancer'
 
 const HeroText = () => {
   return (
-    <header className="container flex h-1/4 w-full justify-around p-6 text-default-800 lg:px-28 xl:px-52">
+    <header className=" justify-left flex h-1/3 w-full p-6 text-default-800 md:justify-evenly ">
       <div className="flex flex-col gap-4">
-        <h1 className="text-left text-3xl  font-bold  md:text-5xl lg:text-6xl xl:text-7xl">
+        <h1 className="text-left text-3xl  font-bold  md:text-6xl lg:text-7xl xl:text-8xl">
           <Balancer>Dani López González</Balancer>
         </h1>
-        <h2 className=" text-left text-2xl font-semibold  md:text-4xl lg:text-5xl xl:text-6xl">
+        <h2 className=" text-left text-2xl font-semibold  md:text-5xl lg:text-6xl xl:text-7xl">
           <Balancer>Full-Stack Developer</Balancer>
         </h2>
       </div>
