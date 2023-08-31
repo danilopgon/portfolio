@@ -8,7 +8,7 @@ interface NavBarProps {
   shouldHideOnScroll: boolean
 }
 
-export default function NavBar({ shouldHideOnScroll }: NavBarProps): JSX.Element {
+const NavBar = ({ shouldHideOnScroll }: NavBarProps): JSX.Element => {
   return (
     <Navbar shouldHideOnScroll={shouldHideOnScroll}>
       <NavbarBrand aria-label="danilopgon logo">
@@ -63,3 +63,5 @@ export default function NavBar({ shouldHideOnScroll }: NavBarProps): JSX.Element
     </Navbar>
   )
 }
+
+export default NavBar

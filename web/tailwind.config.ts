@@ -32,6 +32,7 @@ const config: Config = {
         
       },
     }),
+    require('tailwindcss-animated')
   ],
 };
 

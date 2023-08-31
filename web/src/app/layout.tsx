@@ -17,7 +17,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="es">
       <body>
         <Providers>
-          <NavBar />
+          <NavBar shouldHideOnScroll={true} />
           {children}
         </Providers>
       </body>

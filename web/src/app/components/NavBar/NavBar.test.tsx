@@ -3,14 +3,14 @@ import NavBar from './NavBar'
 
 describe('NavBar', () => {
   it('renders the navbar brand', () => {
-    render(<NavBar />)
+    render(<NavBar shouldHideOnScroll={true} />)
     const brandElement = screen.getByLabelText('danilopgon logo')
     console.log(brandElement)
     expect(brandElement).toBeInTheDocument()
   })
 
   it('renders the navigation links', () => {
-    render(<NavBar />)
+    render(<NavBar shouldHideOnScroll={true} />)
     const homeLink = screen.getByText('Inicio')
     const workLink = screen.getByText('Trabajo')
     const contactLink = screen.getByText('Contacto')
@@ -23,7 +23,7 @@ describe('NavBar', () => {
   })
 
   it('renders the theme switcher', () => {
-    render(<NavBar />)
+    render(<NavBar shouldHideOnScroll={true} />)
     const themeSwitcher = screen.getByLabelText('Toggle Dark Mode')
     expect(themeSwitcher).toBeInTheDocument()
   })
