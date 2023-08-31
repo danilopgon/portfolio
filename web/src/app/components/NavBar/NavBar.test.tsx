@@ -4,7 +4,7 @@ import NavBar from './NavBar'
 describe('NavBar', () => {
   it('renders the navbar brand', () => {
     render(<NavBar shouldHideOnScroll={true} />)
-    const brandElement = screen.getByLabelText('danilopgon logo')
+    const brandElement = screen.getByRole('img')
     console.log(brandElement)
     expect(brandElement).toBeInTheDocument()
   })

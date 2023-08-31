@@ -12,4 +12,14 @@ describe('HeroText', () => {
     const heroText = screen.getByText(/Full-Stack Developer/i)
     expect(heroText).toBeInTheDocument()
   })
+  it('renders the text with h3 tag', () => {
+    render(<HeroText />)
+    const heroText = screen.getByText(/Haz scroll/i)
+    expect(heroText).toBeInTheDocument()
+  })
+  it('renders the svg arrow', () => {
+    render(<HeroText />)
+    const svgElement = screen.getByRole('img')
+    expect(svgElement).toBeInTheDocument()
+  })
 })
