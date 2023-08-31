@@ -4,9 +4,13 @@ import { Link } from '@nextui-org/link'
 
 import ThemeSwitcher from '../ThemeSwitcher'
 
-export default function App() {
+interface NavBarProps {
+  shouldHideOnScroll: boolean
+}
+
+export default function NavBar({ shouldHideOnScroll }: NavBarProps): JSX.Element {
   return (
-    <Navbar shouldHideOnScroll>
+    <Navbar shouldHideOnScroll={shouldHideOnScroll}>
       <NavbarBrand aria-label="danilopgon logo">
         <svg
           className="w-6 fill-primary transition-all duration-300 hover:fill-secondary"

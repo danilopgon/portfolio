@@ -19,7 +19,6 @@ const ThemeSwitcher = () => {
   return (
     <Switch
       aria-label="Toggle Dark Mode"
-      defaultSelected
       size="lg"
       color="primary"
       startContent={<SunIcon />}
