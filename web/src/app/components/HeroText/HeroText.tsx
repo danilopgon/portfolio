@@ -4,12 +4,12 @@ import { Divider } from '@nextui-org/divider'
 const HeroText = () => {
   return (
     <header className="w-full">
-      <div className=" justify-left my-5 flex h-2/3 w-full px-6 py-8 uppercase text-default-800 md:justify-between md:px-12 md:pt-14 xl:px-20 xl:pt-24">
+      <div className="justify-left my-5 flex h-2/3 w-full px-6 py-8 uppercase text-default-800 md:justify-between md:px-12 md:pt-14 xl:px-20 xl:pt-24">
         <div className="flex flex-col gap-4 ">
           <h1 className="animate-fade-right text-left  text-3xl font-bold  animate-once animate-ease-out md:text-4xl lg:text-6xl xl:text-7xl 2xl:text-8xl">
             <Balancer>Dani López González</Balancer>
           </h1>
-          <h2 className=" animate-fade-right text-left text-2xl font-semibold animate-once animate-ease-out md:text-3xl lg:text-5xl xl:text-6xl 2xl:text-7xl ">
+          <h2 className=" animate-fade-right text-left text-2xl font-semibold animate-once animate-ease-out md:text-3xl lg:text-5xl xl:text-6xl 2xl:text-7xl">
             <Balancer>Full-Stack Developer</Balancer>
           </h2>
         </div>
@@ -34,7 +34,7 @@ const HeroText = () => {
           <Divider orientation="vertical" />
         </div>
       </div>
-      <Divider className="my-4" />
+      <Divider className="my-4 animate-flip-down animate-duration-[2000ms] animate-once animate-ease-in" />
     </header>
   )
 }
