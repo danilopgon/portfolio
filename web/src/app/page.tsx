@@ -10,7 +10,6 @@ export default function Home() {
         alt="danilopgon's photography"
         imageMobile="encabezado_danilopgon_movil.webp"
       />
-      <HeroText />
     </main>
   )
 }
