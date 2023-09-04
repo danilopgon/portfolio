@@ -1,8 +1,3 @@
-import { Card, CardFooter } from '@nextui-org/card'
-import { Image } from '@nextui-org/image'
-import { Button } from '@nextui-org/button'
-import Link from 'next/link'
-
 import HeroText from './components/HeroText/'
 import HeroImage from './components/HeroImage/HeroImage'
 
@@ -15,6 +10,7 @@ export default function Home() {
         alt="danilopgon's photography"
         imageMobile="encabezado_danilopgon_movil.webp"
       />
+      <HeroText />
     </main>
   )
 }

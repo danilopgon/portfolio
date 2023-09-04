@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="es" className="bg-default-50">
+    <html lang="es" className="scroll-smooth bg-default-50">
       <body className="bg-default-50">
         <Providers>
           <NavBar shouldHideOnScroll={true} />

@@ -1,3 +1,7 @@
+'use client'
+
+import { ParallaxBanner, ParallaxBannerLayer } from 'react-scroll-parallax'
+
 interface HeroImageProps {
   image: string
   alt?: string
@@ -6,10 +10,13 @@ interface HeroImageProps {
 
 const HeroImage = ({ image, alt, imageMobile }: HeroImageProps): JSX.Element => {
   return (
-    <div className="flex h-[70vh] lg:h-[80vh]">
-      <img src={image} alt={alt} className="hidden object-cover object-top md:flex" />
+    <ParallaxBanner className="flex h-[70vh] lg:h-[80vh]">
+      <ParallaxBannerLayer speed={1} scale={[0.9, 1.3]} className="object-top">
+        <img src={image} alt={alt} className="hidden  md:flex" />
+      </ParallaxBannerLayer>
+
       {imageMobile ? <img src={imageMobile} alt={alt} className="flex object-cover object-center md:hidden" /> : ''}
-    </div>
+    </ParallaxBanner>
   )
 }
 
