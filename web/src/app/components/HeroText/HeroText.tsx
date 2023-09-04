@@ -2,7 +2,7 @@ import { Balancer } from 'react-wrap-balancer'
 
 const HeroText = () => {
   return (
-    <header className=" justify-left flex h-1/3 w-full p-6 text-default-800 md:justify-between md:p-12 xl:p-14 ">
+    <header className=" justify-left flex h-2/3 w-full p-6 text-default-800 md:justify-between md:p-12 xl:p-14 ">
       <div className="flex flex-col gap-4 ">
         <h1 className="text-left text-3xl  font-bold  md:text-5xl lg:text-7xl xl:text-8xl 2xl:text-9xl">
           <Balancer>Dani López González</Balancer>
@@ -11,7 +11,7 @@ const HeroText = () => {
           <Balancer>Full-Stack Developer</Balancer>
         </h2>
       </div>
-      <div className="mt-24 hidden animate-fade-down place-content-end items-end justify-end animate-duration-1000 animate-once animate-ease-out md:flex xl:mt-72 ">
+      <div className="mt-24 hidden animate-fade-down place-content-end items-end justify-end animate-duration-1000 animate-once animate-ease-out md:flex xl:mt-36 2xl:mt-52 ">
         <svg
           role="img"
           aria-label="Arrow indicating to scroll down"
