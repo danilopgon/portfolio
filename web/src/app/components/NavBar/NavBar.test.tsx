@@ -14,12 +14,12 @@ describe('NavBar', () => {
     const homeLink = screen.getByText('Inicio')
     const workLink = screen.getByText('Trabajo')
     const contactLink = screen.getByText('Contacto')
-    const blogLink = screen.getByText('Blog')
+   
 
     expect(homeLink).toBeInTheDocument()
     expect(workLink).toBeInTheDocument()
     expect(contactLink).toBeInTheDocument()
-    expect(blogLink).toBeInTheDocument()
+   
   })
 
   it('renders the theme switcher', () => {

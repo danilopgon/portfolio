@@ -49,11 +49,6 @@ const NavBar = ({ shouldHideOnScroll }: NavBarProps): JSX.Element => {
             Contacto
           </Link>
         </NavbarItem>
-        <NavbarItem>
-          <Link color="foreground" href="#">
-            Blog
-          </Link>
-        </NavbarItem>
       </NavbarContent>
       <NavbarContent justify="end">
         <NavbarItem>
