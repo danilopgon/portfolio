@@ -2,7 +2,7 @@ import { Balancer } from 'react-wrap-balancer'
 
 const HeroText = () => {
   return (
-    <header className=" justify-left flex h-2/3 w-full p-6 text-default-800 md:justify-between md:p-12 xl:p-14 ">
+    <header className=" justify-left my-5 flex h-2/3 w-full p-6 text-default-800 md:justify-between md:p-12 xl:p-14 ">
       <div className="flex flex-col gap-4 ">
         <h1 className="text-left text-3xl  font-bold  md:text-5xl lg:text-7xl xl:text-8xl 2xl:text-9xl">
           <Balancer>Dani López González</Balancer>
