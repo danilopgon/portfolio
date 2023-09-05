@@ -5,7 +5,6 @@ describe('NavBar', () => {
   it('renders the navbar brand', () => {
     render(<NavBar shouldHideOnScroll={true} />)
     const brandElement = screen.getByRole('img')
-    console.log(brandElement)
     expect(brandElement).toBeInTheDocument()
   })
 
@@ -14,12 +13,10 @@ describe('NavBar', () => {
     const homeLink = screen.getByText('Inicio')
     const workLink = screen.getByText('Trabajo')
     const contactLink = screen.getByText('Contacto')
-   
 
     expect(homeLink).toBeInTheDocument()
     expect(workLink).toBeInTheDocument()
     expect(contactLink).toBeInTheDocument()
-   
   })
 
   it('renders the theme switcher', () => {
