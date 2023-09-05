@@ -1,7 +1,8 @@
 import HeroText from './components/HeroText/'
 import HeroImage from './components/HeroImage/'
 import AboutMe from './components/AboutMe/'
-import SkillsSection from './components/SkillsSection/SkillsSection'
+import SkillsSection from './components/SkillsSection'
+import Marquee from './components/Marquee'
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       />
       <AboutMe />
       <SkillsSection />
+      <Marquee text="Proyectos" />
     </main>
   )
 }

@@ -19,12 +19,12 @@ const HeroText = () => {
     <header className="w-full">
       <div className="justify-left my-5 flex h-2/3 w-full px-6 py-8 uppercase text-default-800 md:justify-between md:px-12 md:pt-14 xl:px-20 xl:pt-24">
         <div className="flex flex-col gap-4 ">
-          <h1 className="hover:duration-50 transform  animate-fade-right text-left text-3xl font-bold transition duration-100 animate-normal animate-fill-both  animate-once animate-ease-in-out hover:-translate-y-1 hover:animate-fade-left hover:ease-in-out md:text-4xl lg:text-6xl xl:text-7xl 2xl:text-8xl">
+          <h1 className="hover:duration-50 transform  animate-fade-right text-left text-3xl font-bold transition duration-100 animate-normal animate-fill-both  animate-once animate-ease-in-out hover:-translate-y-1 hover:animate-fade-left hover:ease-in-out md:text-4xl lg:text-6xl 2xl:text-8xl">
             <Balancer onMouseEnter={handleHover} onMouseLeave={handleMouseLeave}>
               {text}
             </Balancer>
           </h1>
-          <h2 className="animate-fade-right text-left text-2xl font-semibold animate-once animate-ease-out md:text-3xl lg:text-5xl xl:text-6xl 2xl:text-7xl">
+          <h2 className="animate-fade-right text-left text-2xl font-semibold animate-once animate-ease-out md:text-3xl lg:text-5xl  2xl:text-7xl">
             Full-Stack Developer
           </h2>
         </div>
@@ -43,7 +43,7 @@ const HeroText = () => {
             </svg>
 
             <div>
-              <h3 className=" flex-1  text-xl font-semibold xl:text-3xl ">Haz scroll</h3>
+              <h3 className=" flex-1  text-xl font-semibold xl:text-2xl 2xl:text-3xl ">Haz scroll</h3>
             </div>
           </div>
           <Divider orientation="vertical" />

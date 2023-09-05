@@ -22,7 +22,7 @@ const SkillsSection = () => {
             <p className="max-w-lg animate-fade-up animate-delay-100 animate-once animate-ease-linear lg:animate-fade-left lg:animate-delay-150">
               <Balancer>
                 Me tomo muy en serio la creación de interfaces de usuario y puedo utilizar frameworks como React o
-                Next.js para crear sitios web que sean funcionales y atractivos.
+                Next.js para generar sitios web que sean funcionales y atractivos.
               </Balancer>
             </p>
           </div>
