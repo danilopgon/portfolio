@@ -15,8 +15,11 @@ const SkillsSection = () => {
           className="mx-4 hidden animate-flip-down animate-duration-[2000ms] animate-once animate-ease-in lg:flex"
         />
 
-        <div className="mt-5 flex h-full w-full flex-col gap-4 lg:grid lg:w-8/12 lg:grid-cols-5 lg:grid-rows-3 lg:place-items-center lg:p-3">
+        <div className="lg:grid-cols- mt-5 flex h-full w-full flex-col gap-4 lg:grid lg:w-8/12 lg:grid-rows-3 lg:place-items-center lg:p-3">
           <div className="lg:col-span-2 lg:row-span-1">
+            <h5 className="my-5 animate-fade-up text-lg md:animate-fade-right lg:text-xl xl:text-2xl 2xl:text-3xl">
+              <Balancer ratio={0.8}>Front-end</Balancer>
+            </h5>
             <p>
               <Balancer>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet, cumque nemo quaerat beatae esse vitae
@@ -30,6 +33,9 @@ const SkillsSection = () => {
           />
           <Divider className="my-4 lg:hidden" />
           <div className="lg:col-span-2 lg:row-span-1">
+            <h5 className="my-5 animate-fade-up text-lg md:animate-fade-right lg:text-xl xl:text-2xl 2xl:text-3xl">
+              <Balancer ratio={0.8}>Back-end</Balancer>
+            </h5>
             <p>
               <Balancer>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet, cumque nemo quaerat beatae esse vitae
@@ -39,6 +45,9 @@ const SkillsSection = () => {
           </div>
           <Divider className="col-span-5 row-span-1 my-4 animate-flip-down  animate-duration-[2000ms] animate-once animate-ease-in" />
           <div className="lg:col-span-2 lg:row-span-1">
+            <h5 className="my-5 animate-fade-up text-lg md:animate-fade-right lg:text-xl xl:text-2xl 2xl:text-3xl">
+              <Balancer ratio={0.8}>UX/UI</Balancer>
+            </h5>
             <p>
               <Balancer>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet, cumque nemo quaerat beatae esse vitae
@@ -51,7 +60,10 @@ const SkillsSection = () => {
             className="col-span-1 row-span-1 mx-4 hidden animate-flip-down  animate-duration-[2000ms] animate-once animate-ease-in lg:flex"
           />
           <Divider className="my-4 lg:hidden" />
-          <div className="lg:col-span-2 lg:row-span-1">
+          <div className="lg:col-span-2 lg:row-span-1 lg:justify-self-start">
+            <h5 className="my-5 animate-fade-up text-lg md:animate-fade-right lg:text-xl xl:text-2xl 2xl:text-3xl">
+              <Balancer ratio={0.8}>Contenido digital</Balancer>
+            </h5>
             <p>
               <Balancer>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet, cumque nemo quaerat beatae esse vitae

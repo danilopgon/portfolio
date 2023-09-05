@@ -22,7 +22,7 @@ const AboutMe = () => {
         </div>
         <Divider
           orientation="vertical"
-          className="mx-4 hidden animate-flip-down animate-duration-[2000ms] animate-once animate-ease-in md:flex"
+          className=" mx-4 hidden animate-flip-down animate-duration-[2000ms] animate-once animate-ease-in md:flex 2xl:mx-8"
         />
         <div className="mt-5  flex h-full w-full flex-col  justify-between  md:w-4/12">
           <h2 className="animate-fade-down text-xl md:animate-fade-left md:px-3 lg:text-2xl xl:text-3xl 2xl:text-4xl">
