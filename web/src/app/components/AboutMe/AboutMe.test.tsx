@@ -12,9 +12,9 @@ describe('AboutMe', () => {
     const title = screen.queryByText(/Sobre mí/i)
     expect(title).toBeInTheDocument()
   })
-  it('renders the AboutMe section with a text description in p that containts full-stack', () => {
+  it('renders the AboutMe section with a text description in p that containts desarrollador', () => {
     render(<AboutMe />)
-    const description = screen.queryByText(/full stack/i)
+    const description = screen.queryByText(/desarrollador/i)
     expect(description).toBeInTheDocument()
   })
   it('renders the social media icons with the correct aria-label', () => {
