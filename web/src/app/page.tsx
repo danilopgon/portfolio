@@ -1,6 +1,7 @@
 import HeroText from './components/HeroText/'
 import HeroImage from './components/HeroImage/'
 import AboutMe from './components/AboutMe/'
+import SkillsSection from './components/SkillsSection/SkillsSection'
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
         imageMobile="encabezado_danilopgon_movil.webp"
       />
       <AboutMe />
+      <SkillsSection />
     </main>
   )
 }
