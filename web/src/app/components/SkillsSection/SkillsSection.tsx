@@ -19,10 +19,10 @@ const SkillsSection = () => {
             <h5 className="my-3 animate-fade-up text-lg lg:animate-fade-left lg:text-xl xl:text-2xl 2xl:text-3xl">
               <Balancer ratio={0.8}>Front-end</Balancer>
             </h5>
-            <p className="animate-fade-up animate-delay-100 animate-once animate-ease-linear lg:animate-fade-left lg:animate-delay-150">
+            <p className="max-w-lg animate-fade-up animate-delay-100 animate-once animate-ease-linear lg:animate-fade-left lg:animate-delay-150">
               <Balancer>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet, cumque nemo quaerat beatae esse vitae
-                fuga minima debitis facere consequatur voluptatum laborum.
+                Me tomo muy en serio la creación de interfaces de usuario y puedo utilizar frameworks como React o
+                Next.js para crear sitios web que sean funcionales y atractivos.
               </Balancer>
             </p>
           </div>
@@ -35,10 +35,10 @@ const SkillsSection = () => {
             <h5 className="my-3 animate-fade-up text-lg lg:animate-fade-left lg:text-xl xl:text-2xl 2xl:text-3xl">
               <Balancer ratio={0.8}>Back-end</Balancer>
             </h5>
-            <p className="animate-fade-up animate-delay-100 animate-once animate-ease-linear lg:animate-fade-left lg:animate-delay-150 ">
+            <p className="max-w-lg animate-fade-up animate-delay-100 animate-once animate-ease-linear lg:animate-fade-left lg:animate-delay-150 ">
               <Balancer>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet, cumque nemo quaerat beatae esse vitae
-                fuga minima debitis facere consequatur voluptatum laborum.
+                Puedo desarrollar aplicaciones web completas con Python, Node.js y otros lenguajes. Soy capaz de crear
+                APIs y conectarlas con bases de datos para crear aplicaciones robustas y escalables.
               </Balancer>
             </p>
           </div>
@@ -47,10 +47,10 @@ const SkillsSection = () => {
             <h5 className="my-3 animate-fade-up text-lg lg:animate-fade-left lg:text-xl xl:text-2xl 2xl:text-3xl">
               <Balancer ratio={0.8}>UX/UI</Balancer>
             </h5>
-            <p className="animate-fade-up animate-delay-100 animate-once animate-ease-linear lg:animate-fade-left lg:animate-delay-150 ">
+            <p className="max-w-lg animate-fade-up animate-delay-100 animate-once animate-ease-linear lg:animate-fade-left lg:animate-delay-150 ">
               <Balancer>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet, cumque nemo quaerat beatae esse vitae
-                fuga minima debitis facere consequatur voluptatum laborum.
+                Tengo formación en narrativas transmedia, UX y diseño de interfaces. Me aseguro de que los sitios web y
+                las aplicaciones que creo sean intuitivos y fáciles de usar.
               </Balancer>
             </p>
           </div>
@@ -63,10 +63,10 @@ const SkillsSection = () => {
             <h5 className="my-3 animate-fade-up text-lg lg:animate-fade-left lg:text-xl xl:text-2xl 2xl:text-3xl">
               <Balancer ratio={0.8}>Contenido digital</Balancer>
             </h5>
-            <p className="animate-fade-up animate-delay-100 animate-once animate-ease-linear lg:animate-fade-left lg:animate-delay-150 ">
+            <p className="max-w-lg animate-fade-up animate-delay-100 animate-once animate-ease-linear lg:animate-fade-left lg:animate-delay-150 ">
               <Balancer>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet, cumque nemo quaerat beatae esse vitae
-                fuga minima debitis facere consequatur voluptatum laborum.
+                Mi experiencia en comunicación me permite crear contenido en multitud de formatos. Desde publicaciones
+                para redes sociales hasta vídeos de todo tipo.
               </Balancer>
             </p>
           </div>
