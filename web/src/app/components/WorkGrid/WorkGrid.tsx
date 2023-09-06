@@ -5,12 +5,14 @@ import { Card, CardHeader, CardBody, CardFooter } from '@nextui-org/card'
 import { Button } from '@nextui-org/button'
 import { Image } from '@nextui-org/image'
 import { Divider } from '@nextui-org/divider'
+import { Skeleton } from '@nextui-org/skeleton'
 
 import fetchProjects from '../../services/fetchProjects'
 import Project from '../../types/Project'
 
 const WorkGrid = () => {
   const [projects, setProjects] = useState<Project[]>([])
+  const [isLoaded, setIsLoaded] = useState<boolean>(false)
 
   useEffect(() => {
     const getProjects = async () => {
@@ -24,14 +26,27 @@ const WorkGrid = () => {
     getProjects()
   }, [])
 
+  useEffect(() => {
+    if (projects) {
+      setIsLoaded(true)
+    }
+  }, [projects])
+
+  if (!isLoaded) {
+    return <Skeleton className="h-96 w-full" />
+  }
+
   return (
     <section className="w-full">
       <div className="grid max-w-full grid-cols-12 grid-rows-2 gap-2 px-8 py-10">
         <Card className="col-span-12 h-96 sm:col-span-4">
           <CardHeader className="absolute top-1 z-10 flex-col !items-start">
-            <p className="text-tiny font-bold uppercase text-white/60">What to watch</p>
-            <h4 className="text-large font-medium text-white">Stream the Acme event</h4>
+            <div>
+              <p className="text-tiny font-bold uppercase text-white/60">What to watch</p>
+              <h4 className="text-large font-medium text-white">Stream the Acme event</h4>
+            </div>
           </CardHeader>
+
           <Image
             removeWrapper
             alt="Card background"
@@ -39,6 +54,7 @@ const WorkGrid = () => {
             src="encabezado_danilopgon_movil.webp"
           />
         </Card>
+
         <Card className="col-span-12 h-96 sm:col-span-4">
           <CardHeader className="absolute top-1 z-10 flex-col !items-start">
             <p className="text-tiny font-bold uppercase text-white/60">Plant a tree</p>
@@ -113,6 +129,7 @@ const WorkGrid = () => {
           </CardFooter>
         </Card>
       </div>
+
       <Divider className="my-4 animate-flip-down animate-duration-[2000ms] animate-once animate-ease-in" />
     </section>
   )
