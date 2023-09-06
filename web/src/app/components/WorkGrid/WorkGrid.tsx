@@ -49,12 +49,13 @@ const WorkGrid = () => {
   return (
     <section className="w-full">
       <div className="grid max-w-full animate-fade grid-cols-12 grid-rows-2 gap-2 px-8 py-10">
-        <Card className="col-span-12 h-96  sm:col-span-4">
+        <Card
+          className="col-span-12 h-96  transition delay-100 ease-in-out hover:-translate-y-1 hover:shadow-lg hover:shadow-primary-700  sm:col-span-4"
+          isPressable
+        >
           <CardHeader className="absolute top-1 z-10 flex-col !items-start">
-            <div>
-              <p className="text-tiny font-bold uppercase text-white/60">What to watch</p>
-              <h4 className="text-large font-medium text-white">Stream the Acme event</h4>
-            </div>
+            <p className="text-tiny font-bold uppercase text-white/60">What to watch</p>
+            <h4 className="text-large font-medium text-white">Stream the Acme event</h4>
           </CardHeader>
 
           <Image
@@ -65,7 +66,10 @@ const WorkGrid = () => {
           />
         </Card>
 
-        <Card className="col-span-12 h-96 sm:col-span-4">
+        <Card
+          className=" col-span-12 h-96 transition delay-100 ease-in-out hover:-translate-y-1 hover:shadow-lg hover:shadow-primary-700 sm:col-span-4"
+          isPressable
+        >
           <CardHeader className="absolute top-1 z-10 flex-col !items-start">
             <p className="text-tiny font-bold uppercase text-white/60">Plant a tree</p>
             <h4 className="text-large font-medium text-white">Contribute to the planet</h4>
@@ -77,7 +81,10 @@ const WorkGrid = () => {
             src="encabezado_danilopgon_movil.webp"
           />
         </Card>
-        <Card className="col-span-12 h-96 sm:col-span-4">
+        <Card
+          className="col-span-12 h-96 transition delay-100 ease-in-out hover:-translate-y-1 hover:shadow-lg hover:shadow-primary-700 sm:col-span-4"
+          isPressable
+        >
           <CardHeader className="absolute top-1 z-10 flex-col !items-start">
             <p className="text-tiny font-bold uppercase text-white/60">Supercharged</p>
             <h4 className="text-large font-medium text-white">Creates beauty like a beast</h4>
@@ -89,7 +96,11 @@ const WorkGrid = () => {
             src="encabezado_danilopgon_movil.webp"
           />
         </Card>
-        <Card isFooterBlurred className="col-span-12 h-96 w-full sm:col-span-5">
+        <Card
+          isFooterBlurred
+          className="col-span-12  h-96 w-full transition delay-100 ease-in-out hover:-translate-y-1 hover:shadow-lg hover:shadow-primary-700 sm:col-span-5 "
+          isPressable
+        >
           <CardHeader className="absolute top-1 z-10 flex-col items-start">
             <p className="text-tiny font-bold uppercase text-white/60">New</p>
             <h4 className="text-2xl font-medium text-black">Acme camera</h4>
@@ -110,7 +121,11 @@ const WorkGrid = () => {
             </Button>
           </CardFooter>
         </Card>
-        <Card isFooterBlurred className="col-span-12 h-96 w-full sm:col-span-7">
+        <Card
+          isFooterBlurred
+          className="col-span-12 h-96 w-full transition delay-100 ease-in-out hover:-translate-y-1 hover:shadow-lg hover:shadow-primary-700 sm:col-span-7"
+          isPressable
+        >
           <CardHeader className="absolute top-1 z-10 flex-col items-start">
             <p className="text-tiny font-bold uppercase text-white/60">Your day your way</p>
             <h4 className="text-xl font-medium text-white/90">Your checklist for better sleep</h4>
