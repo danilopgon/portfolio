@@ -3,6 +3,7 @@ import HeroImage from './components/HeroImage/'
 import AboutMe from './components/AboutMe/'
 import SkillsSection from './components/SkillsSection'
 import Marquee from './components/Marquee'
+import WorkGrid from './components/WorkGrid'
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <AboutMe />
       <SkillsSection />
       <Marquee text="Proyectos" />
+      <WorkGrid />
     </main>
   )
 }

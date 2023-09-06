@@ -6,19 +6,15 @@ interface MarqueeProps {
 
 const Marquee = ({ text }: MarqueeProps): JSX.Element => {
   return (
-    <section>
-      <div className="bold relative flex w-full overflow-x-hidden whitespace-nowrap bg-primary uppercase text-primary-foreground">
-        <div className="animate-marquee bg-primary py-14">
-          <span className="mx-4 text-4xl lg:text-6xl xl:text-7xl 2xl:text-8xl">{text}</span>
-          <span className="mx-4 text-4xl lg:text-6xl xl:text-7xl 2xl:text-8xl">{text}</span>
+    <section className="w-full">
+      <div className=" relative flex w-full overflow-x-hidden bg-primary uppercase  text-primary-foreground">
+        <div className="bold animate-marquee whitespace-nowrap bg-primary py-14">
           <span className="mx-4 text-4xl lg:text-6xl xl:text-7xl 2xl:text-8xl">{text}</span>
           <span className="mx-4 text-4xl lg:text-6xl xl:text-7xl 2xl:text-8xl">{text}</span>
           <span className="mx-4 text-4xl lg:text-6xl xl:text-7xl 2xl:text-8xl">{text}</span>
         </div>
 
-        <div className="animate-marquee2 absolute top-0 bg-primary py-14">
-          <span className="mx-4 text-4xl lg:text-6xl xl:text-7xl 2xl:text-8xl">{text}</span>
-          <span className="mx-4 text-4xl lg:text-6xl xl:text-7xl 2xl:text-8xl">{text}</span>
+        <div className="bold absolute top-0 animate-marquee2  whitespace-nowrap bg-primary py-14">
           <span className="mx-4 text-4xl lg:text-6xl xl:text-7xl 2xl:text-8xl">{text}</span>
           <span className="mx-4 text-4xl lg:text-6xl xl:text-7xl 2xl:text-8xl">{text}</span>
           <span className="mx-4 text-4xl lg:text-6xl xl:text-7xl 2xl:text-8xl">{text}</span>
