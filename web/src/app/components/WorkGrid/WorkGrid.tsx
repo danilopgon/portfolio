@@ -33,13 +33,23 @@ const WorkGrid = () => {
   }, [projects])
 
   if (!isLoaded) {
-    return <Skeleton className="h-96 w-full" />
+    return (
+      <section className="w-full">
+        <div className="grid max-w-full animate-fade grid-cols-12 grid-rows-2 gap-2 px-8 py-10">
+          <Skeleton className="col-span-12 h-96  sm:col-span-4"></Skeleton>
+          <Skeleton className="col-span-12 h-96  sm:col-span-4"></Skeleton>
+          <Skeleton className="col-span-12 h-96  sm:col-span-4"></Skeleton>
+          <Skeleton className="col-span-12 h-96  sm:col-span-5"></Skeleton>
+          <Skeleton className="col-span-12 h-96  sm:col-span-7"></Skeleton>
+        </div>
+      </section>
+    )
   }
 
   return (
     <section className="w-full">
-      <div className="grid max-w-full grid-cols-12 grid-rows-2 gap-2 px-8 py-10">
-        <Card className="col-span-12 h-96 sm:col-span-4">
+      <div className="grid max-w-full animate-fade grid-cols-12 grid-rows-2 gap-2 px-8 py-10">
+        <Card className="col-span-12 h-96  sm:col-span-4">
           <CardHeader className="absolute top-1 z-10 flex-col !items-start">
             <div>
               <p className="text-tiny font-bold uppercase text-white/60">What to watch</p>
