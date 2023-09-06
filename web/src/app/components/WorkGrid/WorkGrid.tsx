@@ -17,6 +17,7 @@ const WorkGrid = () => {
   useEffect(() => {
     const getProjects = async () => {
       const projectsFromServer = await fetchProjects()
+      console.log(projectsFromServer)
 
       if (projectsFromServer) {
         setProjects(projectsFromServer)
@@ -71,7 +72,7 @@ const WorkGrid = () => {
           isPressable
         >
           <CardHeader className="absolute top-1 z-10 flex-col !items-start">
-            <p className="text-tiny font-bold uppercase text-white/60">Plant a tree</p>
+            <p className="text-tiny font-bold uppercase text-white/60">{projects[0]?.attributes?.description}</p>
             <h4 className="text-large font-medium text-white">Contribute to the planet</h4>
           </CardHeader>
           <Image

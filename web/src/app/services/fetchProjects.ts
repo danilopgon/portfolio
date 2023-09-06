@@ -1,7 +1,7 @@
 import Project from '../types/Project'
 
 const fetchProjects = async () => {
-  const url = `${process.env.NEXT_PUBLIC_STRAPI_URL}/api/projects?locale=es`
+  const url = `${process.env.NEXT_PUBLIC_STRAPI_URL}/api/projects?populate=*&locale=es`
 
   const options = {
     method: 'GET',
@@ -13,7 +13,7 @@ const fetchProjects = async () => {
   try {
     const response = await fetch(url, options)
     const data = await response.json()
-    return data as Project[]
+    return data.data as Project[]
   } catch (error) {
     console.error(error)
   }
