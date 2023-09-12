@@ -27,7 +27,7 @@ const WorkGrid = () => {
   }
 
   return (
-    <section className="w-full">
+    <section className="w-full" id="trabajo">
       <div className="grid max-w-full animate-fade grid-cols-12 grid-rows-2 gap-2 px-8 py-10">
         {adaptedProjects.map((project: CustomCardProps, index: number) => {
           if (index > 4) return

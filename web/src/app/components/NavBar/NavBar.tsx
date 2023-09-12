@@ -1,4 +1,6 @@
-import React from 'react'
+'use client'
+
+import React, { useState } from 'react'
 import { Navbar, NavbarBrand, NavbarContent, NavbarItem } from '@nextui-org/navbar'
 import { Link } from '@nextui-org/link'
 
@@ -9,6 +11,8 @@ interface NavBarProps {
 }
 
 const NavBar = ({ shouldHideOnScroll }: NavBarProps): JSX.Element => {
+  const [navItem, setNavItem] = useState('home')
+
   return (
     <Navbar shouldHideOnScroll={shouldHideOnScroll}>
       <NavbarBrand role="img" aria-label="danilopgon logo">
@@ -34,18 +38,42 @@ const NavBar = ({ shouldHideOnScroll }: NavBarProps): JSX.Element => {
         </svg>
       </NavbarBrand>
       <NavbarContent className="hidden gap-4 sm:flex" justify="center">
-        <NavbarItem>
-          <Link color="foreground" href="#">
+        <NavbarItem isActive={navItem === 'home'}>
+          <Link
+            color="foreground"
+            href="#"
+            onClick={() => {
+              setNavItem('home')
+            }}
+          >
             Inicio
           </Link>
         </NavbarItem>
-        <NavbarItem isActive>
-          <Link color="foreground" href="#">
+        <NavbarItem isActive={navItem === 'work'}>
+          <Link
+            color="foreground"
+            href="#trabajo"
+            onClick={() => {
+              setNavItem('work')
+              setTimeout(() => {
+                setNavItem('home')
+              }, 1000)
+            }}
+          >
             Trabajo
           </Link>
         </NavbarItem>
-        <NavbarItem>
-          <Link color="foreground" href="#">
+        <NavbarItem isActive={navItem === 'contact'}>
+          <Link
+            color="foreground"
+            href="#"
+            onClick={() => {
+              setNavItem('contact')
+              setTimeout(() => {
+                setNavItem('home')
+              }, 1000)
+            }}
+          >
             Contacto
           </Link>
         </NavbarItem>
