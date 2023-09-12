@@ -19,7 +19,7 @@ const CustomCard = ({
 }: CustomCardProps): JSX.Element => {
   return (
     <Card
-      className={`col-span-12 sm:col-span-6 md:col-span-${colSpan} h-96 transition delay-100 ease-in-out hover:-translate-y-1 hover:shadow-lg hover:shadow-primary-700`}
+      className={`${colSpan} h-96 transition delay-100 ease-in-out hover:-translate-y-1 hover:shadow-lg hover:shadow-primary-700`}
       isPressable
     >
       <CardHeader className="absolute top-1 z-10 flex-col !items-start">

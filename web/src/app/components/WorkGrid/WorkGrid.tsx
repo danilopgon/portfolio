@@ -8,6 +8,7 @@ import fetchProjects from '../../services/fetchProjects'
 import Project from '../../types/Project'
 import CustomCardProps from '../../types/CustomCardProps'
 import CustomCard from './CustomCard'
+import styles from './WorkGrid.module.css'
 
 const WorkGrid = () => {
   const [projects, setProjects] = useState<Project[]>([])
@@ -35,7 +36,7 @@ const WorkGrid = () => {
 
       return {
         id,
-        colSpan: '4',
+        colSpan: `${styles.cardspan}`,
         title,
         thumbnail: cardImageURL,
         alternativeText,
@@ -80,11 +81,11 @@ const WorkGrid = () => {
     return (
       <section className="w-full">
         <div className="grid max-w-full animate-fade grid-cols-12 grid-rows-2 gap-2 px-8 py-10">
-          <Skeleton className="col-span-12 h-96  sm:col-span-4"></Skeleton>
-          <Skeleton className="col-span-12 h-96  sm:col-span-4"></Skeleton>
-          <Skeleton className="col-span-12 h-96  sm:col-span-4"></Skeleton>
-          <Skeleton className="col-span-12 h-96  sm:col-span-5"></Skeleton>
-          <Skeleton className="col-span-12 h-96  sm:col-span-7"></Skeleton>
+          <Skeleton className={`${styles.cardspan} h-96`}></Skeleton>
+          <Skeleton className={`${styles.cardspan} h-96`}></Skeleton>
+          <Skeleton className={`${styles.cardspan} h-96`}></Skeleton>
+          <Skeleton className={`${styles.bigcardspan} h-96`}></Skeleton>
+          <Skeleton className={`${styles.mediumcardspan} h-96`}></Skeleton>
         </div>
       </section>
     )
@@ -97,11 +98,11 @@ const WorkGrid = () => {
           if (index > 4) return
 
           if (index === 3) {
-            project.colSpan = '5'
+            project.colSpan = `${styles.mediumcardspan}`
           }
 
           if (index === 4) {
-            project.colSpan = '7'
+            project.colSpan = `${styles.bigcardspan}`
           }
 
           return <CustomCard key={project.id} {...project} />
