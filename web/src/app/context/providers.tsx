@@ -5,12 +5,16 @@ import { ThemeProvider as NextThemesProvider } from 'next-themes'
 import { Provider as BalancerProvider } from 'react-wrap-balancer'
 import { ParallaxProvider } from 'react-scroll-parallax'
 
+import { AppProvider } from './AppContext'
+
 const Providers = ({ children }: { children: React.ReactNode }) => {
   return (
     <NextUIProvider>
       <NextThemesProvider attribute="class" defaultTheme="dark">
         <ParallaxProvider>
-          <BalancerProvider>{children}</BalancerProvider>
+          <BalancerProvider>
+            <AppProvider>{children}</AppProvider>
+          </BalancerProvider>
         </ParallaxProvider>
       </NextThemesProvider>
     </NextUIProvider>

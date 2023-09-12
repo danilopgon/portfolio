@@ -9,7 +9,7 @@ describe('SkillsSection', () => {
   })
   it('renders the SkillsSection section with a h2 Title', () => {
     render(<SkillsSection />)
-    const title = screen.queryByText(/Skills/i)
+    const title = screen.queryByText(/Lo que hago/i)
     expect(title).toBeInTheDocument()
   })
 })
