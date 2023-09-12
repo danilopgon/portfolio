@@ -40,6 +40,23 @@ const WorkGrid = () => {
             project.colSpan = `${styles['big-card-span']}`
           }
 
+          if (adaptedProjects.length === 1) {
+            project.colSpan = `${styles['full-span']}`
+          }
+
+          if (adaptedProjects.length === 2) {
+            project.colSpan = `${styles['half-span']}`
+          }
+
+          if (adaptedProjects.length === 3) {
+            project.colSpan = `${styles['third-span']}`
+          }
+
+          if (adaptedProjects.length === 4) {
+            adaptedProjects[3].colSpan = `${styles['full-span']}`
+            return <CustomCard key={project.id} {...project} />
+          }
+
           return <CustomCard key={project.id} {...project} />
         })}
       </div>
