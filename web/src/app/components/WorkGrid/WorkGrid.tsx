@@ -36,7 +36,7 @@ const WorkGrid = () => {
 
       return {
         id,
-        colSpan: `${styles.cardspan}`,
+        colSpan: `${styles['card-span']}`,
         title,
         thumbnail: cardImageURL,
         alternativeText,
@@ -81,11 +81,11 @@ const WorkGrid = () => {
     return (
       <section className="w-full">
         <div className="grid max-w-full animate-fade grid-cols-12 grid-rows-2 gap-2 px-8 py-10">
-          <Skeleton className={`${styles.cardspan} h-96`}></Skeleton>
-          <Skeleton className={`${styles.cardspan} h-96`}></Skeleton>
-          <Skeleton className={`${styles.cardspan} h-96`}></Skeleton>
-          <Skeleton className={`${styles.bigcardspan} h-96`}></Skeleton>
-          <Skeleton className={`${styles.mediumcardspan} h-96`}></Skeleton>
+          <Skeleton className={`${styles['card-span']} h-96`}></Skeleton>
+          <Skeleton className={`${styles['card-span']} h-96`}></Skeleton>
+          <Skeleton className={`${styles['card-span']} h-96`}></Skeleton>
+          <Skeleton className={`${styles['big-card-span']} h-96`}></Skeleton>
+          <Skeleton className={`${styles['medium-card-span']} h-96`}></Skeleton>
         </div>
       </section>
     )
@@ -98,11 +98,11 @@ const WorkGrid = () => {
           if (index > 4) return
 
           if (index === 3) {
-            project.colSpan = `${styles.mediumcardspan}`
+            project.colSpan = `${styles['medium-card-span']}`
           }
 
           if (index === 4) {
-            project.colSpan = `${styles.bigcardspan}`
+            project.colSpan = `${styles['big-card-span']}`
           }
 
           return <CustomCard key={project.id} {...project} />

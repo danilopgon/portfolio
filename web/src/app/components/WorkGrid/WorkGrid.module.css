@@ -1,25 +1,25 @@
-.cardspan {
+.card-span {
   grid-column: span 12;
 }
 
-.bigcardspan {
+.big-card-span {
   grid-column: span 12;
 }
 
-.mediumcardspan {
+.medium-card-span {
   grid-column: span 12;
 }
 
 @media (min-width: 992px) {
-  .cardspan {
+  .card-span {
     grid-column: span 4;
   }
 
-  .bigcardspan {
+  .big-card-span {
     grid-column: span 7;
   }
 
-  .mediumcardspan {
+  .medium-card-span {
     grid-column: span 5;
   }
 }
