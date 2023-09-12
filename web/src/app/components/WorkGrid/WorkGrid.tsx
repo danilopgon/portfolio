@@ -7,7 +7,6 @@ import CustomCard from './CustomCard'
 import styles from './WorkGrid.module.css'
 import useAppContext from '../../context/AppContext'
 import CustomCardProps from '@/app/types/CustomCardProps'
-import { IndexInfo } from 'typescript'
 
 const WorkGrid = () => {
   const { store } = useAppContext()

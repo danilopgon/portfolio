@@ -1,3 +1,5 @@
+import ProjectProperties from './ProjectProperties'
+
 interface CustomCardProps {
   id: number
   colSpan: string
@@ -5,8 +7,8 @@ interface CustomCardProps {
   thumbnail: string
   alternativeText?: string | null
   description: string
-  categories: string
-  technologies: string
+  categories: Array<ProjectProperties>
+  technologies: Array<ProjectProperties>
   url: string
   date: string
 }

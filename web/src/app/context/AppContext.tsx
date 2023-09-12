@@ -27,8 +27,12 @@ export const AppProvider = ({ children }: { children: React.ReactNode }) => {
 
       const { alternativeText, url: thumbnailUrl } = thumbnail.data.attributes
       const cardImageURL = `${process.env.NEXT_PUBLIC_STRAPI_URL}${thumbnailUrl}`
-      const categoriesList = categories.data.map((category) => category.attributes.Name).join(', ')
-      const technologiesList = technologies.data.map((technology) => technology.attributes.Name).join(', ')
+      const categoriesList = categories.data.map((category) => {
+        return { name: category.attributes.Name, id: category.id }
+      })
+      const technologiesList = technologies.data.map((technology) => {
+        return { name: technology.attributes.Name, id: technology.id }
+      })
       const yearDate = new Date(date).getFullYear().toString()
 
       return {
