@@ -31,7 +31,7 @@ const CustomCard = ({
           {categories &&
             categories.map((category) => (
               <p key={category.id} className="text-tiny font-semibold uppercase text-white">
-                {`//  ${category.name}  //`}
+                {categories.length > 1 ? `${category.name} // ` : category.name}
               </p>
             ))}
         </div>
