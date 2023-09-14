@@ -66,7 +66,7 @@ const NavBar = ({ shouldHideOnScroll }: NavBarProps): JSX.Element => {
         <NavbarItem isActive={navItem === 'contact'}>
           <Link
             color="foreground"
-            href="#"
+            href="#contacto"
             onClick={() => {
               setNavItem('contact')
               setTimeout(() => {

@@ -4,6 +4,7 @@ import AboutMe from './components/AboutMe/'
 import SkillsSection from './components/SkillsSection'
 import Marquee from './components/Marquee'
 import WorkGrid from './components/WorkGrid'
+import Contact from './components/Contact'
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <SkillsSection />
       <Marquee text="Proyectos" />
       <WorkGrid />
+      <Contact />
     </main>
   )
 }
