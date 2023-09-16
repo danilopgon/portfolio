@@ -23,7 +23,7 @@ const Contact = () => {
     >
       <section
         role="section"
-        className="z-0 flex h-[90vh] w-full flex-col items-center justify-center px-4 py-10 text-default-800"
+        className="z-0 flex min-h-[80vh] w-full flex-col items-center justify-center px-4 py-10 text-default-800"
         id="contacto"
       >
         <Card className="z-30 w-full border-none bg-background/60 dark:bg-default-100/50 md:w-[80%] lg:w-2/3" isBlurred>
@@ -40,7 +40,7 @@ const Contact = () => {
               <h2 className="animate-fade-down text-xl lg:animate-fade-left lg:px-3 lg:text-2xl xl:text-3xl 2xl:text-4xl">
                 // Contacto
               </h2>
-              <div className="mt-5 flex flex-col gap-3 lg:mt-auto ">
+              <div className="mt-5 flex flex-col gap-3 lg:my-6 lg:mt-auto ">
                 <p className=" max-w-lg animate-fade-down animate-delay-100 animate-once animate-ease-linear lg:animate-fade-left lg:animate-delay-150">
                   <Balancer>Dani López González</Balancer>
                 </p>

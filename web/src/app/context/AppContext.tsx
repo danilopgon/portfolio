@@ -53,7 +53,7 @@ export const AppProvider = ({ children }: { children: React.ReactNode }) => {
   useEffect(() => {
     const getProjects = async () => {
       const projectsFromServer = await fetchProjects()
-      console.log(projectsFromServer)
+      
 
       if (projectsFromServer) {
         setProjects(projectsFromServer)
@@ -75,7 +75,7 @@ export const AppProvider = ({ children }: { children: React.ReactNode }) => {
       setIsLoaded(true)
     }
 
-    console.log(adaptedProjects)
+  
   }, [adaptedProjects])
 
   const store = { projects, adaptedProjects, isLoaded }
