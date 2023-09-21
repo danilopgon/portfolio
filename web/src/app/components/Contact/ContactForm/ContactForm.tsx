@@ -4,20 +4,31 @@ import { useForm, SubmitHandler } from 'react-hook-form'
 import { Input, Textarea } from '@nextui-org/input'
 import { Button } from '@nextui-org/button'
 
-type Inputs = {
-  name: string
-  email: string
-
-  message: string
-}
+import EmailInput from '../../../types/EmailInput'
 
 const ContactForm = () => {
   const {
     register,
     handleSubmit,
     formState: { errors },
-  } = useForm<Inputs>()
-  const onSubmit: SubmitHandler<Inputs> = (data) => console.log(data)
+  } = useForm<EmailInput>()
+
+  const onSubmit: SubmitHandler<EmailInput> = async (data: EmailInput) => {
+    try {
+      const response = await fetch('/api/sendmail', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      })
+      if (response) {
+        console.log(response)
+      }
+    } catch (error) {
+      console.log(error)
+    }
+  }
 
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="my-5 flex max-w-xl animate-fade-up flex-col gap-4">
