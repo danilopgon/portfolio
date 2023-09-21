@@ -1,5 +1,8 @@
 # portfolio-2023
 
+![Mockup del portfolio](https://github.com/danilopgon/portfolio-2023/assets/113547781/fcdbf95f-7ed9-4845-a606-00d2815d58bd)
+
+
 The 2023 version of my portfolio! _(duh)_
 
 You can clone the "template" branch as a quickstart for your own project with **_Strapi + Next.js + TypeScript + TailwindCSS + NextUI + Jest_**
