@@ -1,0 +1,57 @@
+.card-span {
+  grid-column: span 12;
+}
+
+.big-card-span {
+  grid-column: span 12;
+}
+
+.medium-card-span {
+  grid-column: span 12;
+}
+
+.full-span {
+  grid-column: span 12;
+  grid-row: span 2;
+}
+
+.half-span {
+  grid-column: span 12;
+  grid-row: span 2;
+}
+
+.third-span {
+  grid-column: span 12;
+  grid-row: span 2;
+}
+
+@media (min-width: 992px) {
+  .card-span {
+    grid-column: span 4;
+  }
+
+  .big-card-span {
+    grid-column: span 7;
+  }
+
+  .medium-card-span {
+    grid-column: span 5;
+  }
+
+  .full-span {
+    grid-column: span 12;
+    grid-row: span 2;
+    max-width: 80%;
+    justify-self: center;
+  }
+
+  .half-span {
+    grid-column: span 6;
+    grid-row: span 2;
+  }
+
+  .third-span {
+    grid-column: span 4;
+    grid-row: span 2;
+  }
+}

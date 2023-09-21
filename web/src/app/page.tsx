@@ -1,28 +1,25 @@
-import { Card, CardFooter } from "@nextui-org/card";
-import { Image } from "@nextui-org/image";
-import { Button } from "@nextui-org/button";
-import Link from "next/link";
+import HeroText from './components/HeroText/'
+import HeroImage from './components/HeroImage/'
+import AboutMe from './components/AboutMe/'
+import SkillsSection from './components/SkillsSection'
+import Marquee from './components/Marquee'
+import WorkGrid from './components/WorkGrid'
+import Contact from './components/Contact'
 
 export default function Home() {
   return (
-    <main className="flex h-screen flex-col items-center justify-center align-middle p-24">
-      <div className="w-full lg:w-2/3">
-        <Card isFooterBlurred radius="lg" className="border-none">
-          <Image
-            alt="danilopgon"
-            className="object-cover w-full"
-            src="https://danilopgon.com/wp-content/uploads/2020/09/encabezado-retocado-definitivo-2-arreglado.jpg"
-          />
-          <CardFooter className="justify-between before:bg-white/10 border-white/20 border-1 overflow-hidden py-1 absolute before:rounded-xl rounded-large bottom-1 w-[calc(100%_-_8px)] shadow-small ml-1 z-10">
-            <p className="text-tiny text-white/80">
-              danilopgon's portfolio template
-            </p>
-            <Link href="https://github.com/danilopgon/portfolio-2023">
-              <Button>Repository</Button>
-            </Link>
-          </CardFooter>
-        </Card>
-      </div>
+    <main className="flex min-h-screen flex-col content-center items-center justify-center bg-default-50 ">
+      <HeroText />
+      <HeroImage
+        image="encabezado_danilopgon.webp"
+        alt="danilopgon's photography"
+        imageMobile="encabezado_danilopgon_movil.webp"
+      />
+      <AboutMe />
+      <SkillsSection />
+      <Marquee text="Proyectos" />
+      <WorkGrid />
+      <Contact />
     </main>
-  );
+  )
 }
