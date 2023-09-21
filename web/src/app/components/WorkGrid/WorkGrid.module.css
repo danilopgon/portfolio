@@ -16,12 +16,12 @@
 }
 
 .half-span {
-  grid-column: span 6;
+  grid-column: span 12;
   grid-row: span 2;
 }
 
 .third-span {
-  grid-column: span 4;
+  grid-column: span 12;
   grid-row: span 2;
 }
 
