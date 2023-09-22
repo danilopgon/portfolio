@@ -4,6 +4,7 @@ import { Inter } from 'next/font/google'
 
 import Providers from './context/providers'
 import NavBar from './components/NavBar'
+import MainToater from './components/MainToaster'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -17,6 +18,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="es" className={`${inter.className} scroll-smooth bg-default-50 `}>
       <body className="bg-default-50">
         <Providers>
+          <MainToater />
           <NavBar shouldHideOnScroll={true} />
           {children}
         </Providers>
