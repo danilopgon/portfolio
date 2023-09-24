@@ -54,31 +54,59 @@ const ContactForm = () => {
       <form onSubmit={handleSubmit(onSubmit)} className="my-5 flex max-w-xl animate-fade-up flex-col gap-4">
         <div className="flex flex-col gap-2">
           <Input
+            isClearable
             id="name"
             type="text"
             placeholder="Nombre"
-            {...register('name', { required: true, maxLength: 80, minLength: 5 })}
+            {...register('name', {
+              required: true,
+              maxLength: {
+                value: 30,
+                message: 'El nombre es demasiado largo',
+              },
+              minLength: {
+                value: 5,
+                message: 'El nombre es demasiado corto',
+              },
+            })}
             color={errors.name ? 'danger' : 'default'}
-            errorMessage={errors.name ? 'Introduce un nombre valido' : null}
+            errorMessage={errors.name ? errors.name.message : null}
           />
         </div>
         <div className="flex flex-col gap-2">
           <Input
+            isClearable
             id="email"
             type="email"
             placeholder="Email"
-            {...register('email', { required: true, pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i })}
+            {...register('email', {
+              required: true,
+              pattern: {
+                value: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
+                message: 'Email inválido',
+              },
+            })}
             color={errors.email ? 'danger' : 'default'}
-            errorMessage={errors.email ? 'Introduce un email valido' : null}
+            errorMessage={errors.name ? errors.name.message : null}
           />
         </div>
         <div className="flex flex-col gap-2">
           <Textarea
             id="message"
             placeholder="Introduce tu mensaje (hasta 500 caracteres)"
-            {...register('message', { required: true, maxLength: 500, minLength: 10 })}
+            {...register('message', {
+              required: true,
+              maxLength: {
+                value: 500,
+                message: 'El mensaje es demasiado largo',
+              },
+              minLength: {
+                value: 10,
+                message: 'El mensaje es demasiado corto',
+              },
+            })}
             color={errors.message ? 'danger' : 'default'}
-            errorMessage={errors.message ? 'Inroduce tu mensaje' : null}
+            errorMessage={errors.message ? errors.message.message : null}
           />
         </div>
         <div className="flex flex-col gap-2">
