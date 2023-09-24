@@ -87,7 +87,7 @@ const ContactForm = () => {
               },
             })}
             color={errors.email ? 'danger' : 'default'}
-            errorMessage={errors.name ? errors.name.message : null}
+            errorMessage={errors.email ? errors.email.message : null}
           />
         </div>
         <div className="flex flex-col gap-2">
