@@ -57,7 +57,7 @@ const ContactForm = () => {
             id="name"
             type="text"
             placeholder="Nombre"
-            {...register('name', { required: true, maxLength: 80 })}
+            {...register('name', { required: true, maxLength: 80, minLength: 5 })}
             color={errors.name ? 'danger' : 'default'}
             errorMessage={errors.name ? 'Introduce un nombre valido' : null}
           />
@@ -76,7 +76,7 @@ const ContactForm = () => {
           <Textarea
             id="message"
             placeholder="Introduce tu mensaje (hasta 500 caracteres)"
-            {...register('message', { required: true, maxLength: 500 })}
+            {...register('message', { required: true, maxLength: 500, minLength: 10 })}
             color={errors.message ? 'danger' : 'default'}
             errorMessage={errors.message ? 'Inroduce tu mensaje' : null}
           />
