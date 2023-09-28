@@ -24,7 +24,7 @@ const HeroText = () => {
               {text}
             </Balancer>
           </h1>
-          <h2 className="animate-fade-right text-left text-xl font-semibold animate-once animate-ease-out md:text-3xl lg:text-5xl  2xl:text-7xl">
+          <h2 className="animate-fade-right text-left text-xl font-semibold animate-once animate-ease-out md:text-3xl lg:text-5xl 2xl:text-7xl">
             Full-Stack Developer
           </h2>
         </div>
