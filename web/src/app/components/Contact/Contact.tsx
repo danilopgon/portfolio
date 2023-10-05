@@ -27,7 +27,7 @@ const Contact = () => {
         id="contacto"
       >
         <Card className="z-30 w-full border-none bg-background/60 dark:bg-default-100/50 md:w-[80%] lg:w-2/3" isBlurred>
-          <div className="flex w-full flex-col-reverse items-center justify-evenly p-6 lg:h-[32rem] lg:flex-row lg:p-12  xl:p-20 ">
+          <div className="flex w-full flex-col-reverse items-center justify-evenly p-4 md:p-6 lg:h-[32rem] lg:flex-row lg:p-12  xl:p-20 ">
             <div className="mt-5 w-full lg:w-8/12">
               <ContactForm />
             </div>
@@ -37,10 +37,10 @@ const Contact = () => {
             />
 
             <div className="mx-4 mt-5 flex h-full w-full flex-col justify-start align-top lg:w-4/12">
-              <h2 className="animate-fade-down text-xl lg:animate-fade-left lg:px-3 lg:text-2xl xl:text-3xl 2xl:text-4xl">
+              <h2 className="animate-fade-down px-2 text-xl lg:animate-fade-left lg:px-3 lg:text-2xl xl:text-3xl 2xl:text-4xl">
                 // Contacto
               </h2>
-              <div className="mt-5 flex flex-col gap-3 lg:my-6 lg:mt-auto ">
+              <div className="mt-5 flex flex-col gap-3 px-2 md:px-0 lg:my-6 lg:mt-auto ">
                 <p className=" max-w-lg animate-fade-down animate-delay-100 animate-once animate-ease-linear lg:animate-fade-left lg:animate-delay-150">
                   <Balancer>Dani López González</Balancer>
                 </p>
