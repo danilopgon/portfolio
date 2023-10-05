@@ -16,7 +16,9 @@ const NavBar = ({ shouldHideOnScroll }: NavBarProps): JSX.Element => {
   return (
     <Navbar shouldHideOnScroll={shouldHideOnScroll}>
       <NavbarBrand role="img" aria-label="danilopgon logo">
+
         <Link href="/">
+
           <svg
             className="w-6 fill-primary transition-all duration-300 hover:fill-default-900"
             xmlns="http://www.w3.org/2000/svg"
@@ -43,7 +45,7 @@ const NavBar = ({ shouldHideOnScroll }: NavBarProps): JSX.Element => {
         <NavbarItem isActive={navItem === 'home'}>
           <Link
             color="foreground"
-            href="#"
+            href="/"
             onClick={() => {
               setNavItem('home')
             }}
@@ -54,7 +56,7 @@ const NavBar = ({ shouldHideOnScroll }: NavBarProps): JSX.Element => {
         <NavbarItem isActive={navItem === 'work'}>
           <Link
             color="foreground"
-            href="#trabajo"
+            href="/#trabajo"
             onClick={() => {
               setNavItem('work')
               setTimeout(() => {
@@ -68,7 +70,7 @@ const NavBar = ({ shouldHideOnScroll }: NavBarProps): JSX.Element => {
         <NavbarItem isActive={navItem === 'contact'}>
           <Link
             color="foreground"
-            href="#contacto"
+            href="/#contacto"
             onClick={() => {
               setNavItem('contact')
               setTimeout(() => {
