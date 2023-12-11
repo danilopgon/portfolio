@@ -13,7 +13,7 @@ const fetchProjects = async () => {
   try {
     const response = await fetch(url, options)
     const data = await response.json()
-    data.data.sort((a: Project, b: Project) => (a.attributes.finish_date > b.attributes.finish_date ? -1 : 1))
+    data.data.sort((a: Project, b: Project) => (a.attributes.finish_date < b.attributes.finish_date ? -1 : 1))
     return data.data as Project[]
   } catch (error) {
     console.error(error)
