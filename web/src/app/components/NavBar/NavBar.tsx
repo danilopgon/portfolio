@@ -16,9 +16,7 @@ const NavBar = ({ shouldHideOnScroll }: NavBarProps): JSX.Element => {
   return (
     <Navbar shouldHideOnScroll={shouldHideOnScroll}>
       <NavbarBrand role="img" aria-label="danilopgon logo">
-
         <Link href="/">
-
           <svg
             className="w-6 fill-primary transition-all duration-300 hover:fill-default-900"
             xmlns="http://www.w3.org/2000/svg"
