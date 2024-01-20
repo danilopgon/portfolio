@@ -22,7 +22,7 @@ const SkillsSection = () => {
             <p className="max-w-lg animate-fade-up animate-delay-100 animate-once animate-ease-linear lg:animate-fade-left lg:animate-delay-150">
               <Balancer>
                 Me tomo muy en serio la creación de interfaces de usuario y puedo utilizar frameworks como React o
-                Next.js para generar sitios web que sean funcionales y atractivos.
+                Angular para generar sitios web que sean funcionales y atractivos.
               </Balancer>
             </p>
           </div>
@@ -37,7 +37,7 @@ const SkillsSection = () => {
             </h5>
             <p className="max-w-lg animate-fade-up animate-delay-100 animate-once animate-ease-linear lg:animate-fade-left lg:animate-delay-150 ">
               <Balancer>
-                Puedo desarrollar aplicaciones web completas con Python, Node.js y otros lenguajes. Soy capaz de crear
+                Puedo desarrollar aplicaciones web completas con Python, C# y otros lenguajes. Soy capaz de crear
                 APIs y conectarlas con bases de datos para crear aplicaciones robustas y escalables.
               </Balancer>
             </p>
