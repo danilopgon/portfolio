@@ -3,7 +3,7 @@
 ![Mockup del portfolio](https://github.com/danilopgon/portfolio-2023/assets/113547781/fcdbf95f-7ed9-4845-a606-00d2815d58bd)
 
 
-The 2024 version of my portfolio! _(Now with less Strapi)_
+The 2023 version of my portfolio! _(Updated in 2024 with less Strapi)_
 
 ## How to run (Next.js):
 
