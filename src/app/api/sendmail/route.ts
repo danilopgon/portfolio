@@ -4,8 +4,8 @@ export async function POST(request: NextRequest) {
   const { email, name, message } = await request.json()
 
   const transporter = nodemailer.createTransport({
-    host: 'uk5.fcomet.com',
-    port: 465,
+    host: 'smtp.protonmail.ch',
+    port: 587,
     secure: true,
     auth: {
       user: process.env.NODEMAILER_EMAIL,
