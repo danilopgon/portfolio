@@ -5,18 +5,19 @@ import { Balancer } from 'react-wrap-balancer'
 
 const AboutMe = () => {
   return (
-    <section role="section" className=" flex h-2/3 w-full flex-col text-default-800 ">
+    <section role="section" className="flex h-2/3 w-full flex-col text-default-800">
       <Divider className="my-4 animate-flip-down animate-duration-[2000ms] animate-once animate-ease-in" />
       <div className="flex w-full flex-col-reverse items-center justify-evenly p-6 md:h-96 md:flex-row md:p-12  xl:p-20 ">
         <div className="mt-5 w-full md:w-8/12">
           <p className="animate-fade-up text-xl md:animate-fade-right lg:text-3xl xl:text-4xl 2xl:text-5xl">
             <Balancer ratio={0.8}>
-              Soy un desarrollador web familizarizado con la comunicación y la creación de contenido digital.
+              Soy desarrollador web con background en comunicación digital y creación de contenido.
             </Balancer>
           </p>
           <p className="my-5 animate-fade-up text-xl md:animate-fade-right lg:text-3xl xl:text-4xl 2xl:text-5xl">
             <Balancer ratio={0.8}>
-              Construyo experiencias que combinan diseño atractivo y funcionalidad robusta.
+              Diseño y construyo experiencias digitales que combinan narrativa visual, accesibilidad y tecnología
+              robusta.
             </Balancer>
           </p>
         </div>

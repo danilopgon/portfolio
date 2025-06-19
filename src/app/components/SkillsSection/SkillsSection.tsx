@@ -21,8 +21,8 @@ const SkillsSection = () => {
             </h5>
             <p className="max-w-lg animate-fade-up animate-delay-100 animate-once animate-ease-linear lg:animate-fade-left lg:animate-delay-150">
               <Balancer>
-                Me tomo muy en serio la creación de interfaces de usuario y puedo utilizar frameworks como React o
-                Angular para generar sitios web que sean funcionales y atractivos.
+                Desarrollo interfaces accesibles, reactivas y con intención. Trabajo con Angular y React para crear
+                experiencias modernas, coherentes y bien estructuradas.
               </Balancer>
             </p>
           </div>
@@ -31,14 +31,14 @@ const SkillsSection = () => {
             className="col-span-1 row-span-1 mx-4 hidden animate-flip-down animate-duration-[2000ms] animate-once animate-ease-in lg:flex"
           />
           <Divider className="my-4 lg:hidden" />
-          <div className="lg:col-span-2 lg:row-span-1">
+          <div className="lg:col-span-2 lg:row-span-1 lg:justify-self-start">
             <h5 className="my-3 animate-fade-up text-lg lg:animate-fade-left lg:text-xl xl:text-2xl 2xl:text-3xl">
               <Balancer ratio={0.8}>Back-end</Balancer>
             </h5>
             <p className="max-w-lg animate-fade-up animate-delay-100 animate-once animate-ease-linear lg:animate-fade-left lg:animate-delay-150 ">
               <Balancer>
-                Puedo desarrollar aplicaciones web completas con Python, C# y otros lenguajes. Soy capaz de crear
-                APIs y conectarlas con bases de datos para crear aplicaciones robustas y escalables.
+                Construyo APIs robustas y mantenibles con tecnologías como NestJS, .NET o Python. Me ocupo tanto de la
+                lógica como del acceso a datos y el despliegue.
               </Balancer>
             </p>
           </div>
@@ -49,8 +49,8 @@ const SkillsSection = () => {
             </h5>
             <p className="max-w-lg animate-fade-up animate-delay-100 animate-once animate-ease-linear lg:animate-fade-left lg:animate-delay-150 ">
               <Balancer>
-                Tengo formación en narrativas transmedia, UX y diseño de interfaces. Me aseguro de que los sitios web y
-                las aplicaciones que creo sean intuitivos y fáciles de usar.
+                Diseño experiencias centradas en el usuario desde el prototipado en Figma hasta la implementación.
+                Aplico principios de accesibilidad y diseño emocional.
               </Balancer>
             </p>
           </div>
@@ -61,12 +61,12 @@ const SkillsSection = () => {
           <Divider className="my-4 lg:hidden" />
           <div className="lg:col-span-2 lg:row-span-1 lg:justify-self-start">
             <h5 className="my-3 animate-fade-up text-lg lg:animate-fade-left lg:text-xl xl:text-2xl 2xl:text-3xl">
-              <Balancer ratio={0.8}>Contenido digital</Balancer>
+              <Balancer ratio={0.8}>Creatividad digital</Balancer>
             </h5>
             <p className="max-w-lg animate-fade-up animate-delay-100 animate-once animate-ease-linear lg:animate-fade-left lg:animate-delay-150 ">
               <Balancer>
-                Mi experiencia en comunicación me permite crear contenido en multitud de formatos. Desde publicaciones
-                para redes sociales hasta vídeos de todo tipo.
+                Aporto una mirada creativa y narrativa. Diseño elementos visuales, produzco piezas multimedia y los
+                integro en proyectos que requieren coherencia estética.
               </Balancer>
             </p>
           </div>
