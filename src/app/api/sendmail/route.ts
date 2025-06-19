@@ -27,7 +27,6 @@ export async function POST(request: NextRequest) {
         {
           from: process.env.NODEMAILER_EMAIL,
           to: 'contacto@danilopgon.com',
-          // cc: email, (uncomment this line if you want to send a copy to the sender)
           subject: `Message from ${name} (${email})`,
           text: message,
         },
