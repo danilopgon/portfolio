@@ -1,20 +1,25 @@
-# portfolio-2023
+# danilopgon / portfolio
 
 ![Mockup del portfolio](https://github.com/danilopgon/portfolio-2023/assets/113547781/fcdbf95f-7ed9-4845-a606-00d2815d58bd)
 
+Este es mi portfolio personal como desarrollador frontend.
 
-The 2023 version of my portfolio! _(Updated in 2024 with less Strapi)_
+Actualmente estoy en proceso de **actualizarlo progresivamente**, incorporando nuevos proyectos, contenidos y mejoras visuales.  
 
-## How to run (Next.js):
+---
 
-First, run the development server:
+### 🛠️ Tecnologías utilizadas
+
+- **Next.js** – Framework React con soporte SSR
+- **Tailwind CSS** – Utilidades para estilado rápido y flexible
+
+---
+
+### 🚀 Cómo levantarlo en local
 
 ```bash
 npm run dev
-# or
+# o
 yarn dev
-# or
+# o
 pnpm dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
