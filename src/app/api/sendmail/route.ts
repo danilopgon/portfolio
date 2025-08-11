@@ -3,14 +3,22 @@ const nodemailer = require('nodemailer')
 export async function POST(request: NextRequest) {
   const { email, name, message } = await request.json()
 
-  const transporter = nodemailer.createTransport({
-    host: 'uk5.fcomet.com',
-    port: 465,
-    secure: true,
+  let transporter = nodemailer.createTransport({
+    host: 'smtp.protonmail.ch',
+    port: 587,
+    secure: false,
     auth: {
       user: process.env.NODEMAILER_EMAIL,
       pass: process.env.NODEMAILER_PASSWORD,
     },
+  })
+
+  transporter.verify(function (error: any, success: any) {
+    if (error) {
+      console.log(error)
+    } else {
+      console.log('Server is ready to take our messages')
+    }
   })
 
   const sendMailPromise = () =>
@@ -19,7 +27,6 @@ export async function POST(request: NextRequest) {
         {
           from: process.env.NODEMAILER_EMAIL,
           to: 'contacto@danilopgon.com',
-          // cc: email, (uncomment this line if you want to send a copy to the sender)
           subject: `Message from ${name} (${email})`,
           text: message,
         },

@@ -13,8 +13,13 @@ const config: Config = {
       animation: {
         marquee: 'marquee 25s linear infinite',
         marquee2: 'marquee2 25s linear infinite',
+        'fade-in-delayed': 'fadeIn 1s ease-out 0.5s forwards',
       },
       keyframes: {
+        fadeIn: {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
         marquee: {
           '0%': { transform: 'translateX(0%)' },
           '100%': { transform: 'translateX(-100%)' },
